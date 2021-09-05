@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+} 
+
+a {
+    text-decoration: none;
+}
+
+/* Header Section */
+.section1 {
+    background-image: url(https://i.postimg.cc/d146g9zS/ia-200000019.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+    z-index: 1;
+
+}
+
+.section1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 109.5%;
+    z-index: -1;
+}
+
+header {
+    padding: 0px 90px 0 20px;
+    background-color: #00000091;
+}
+
+.header-logo {
+    float: left;
+    width: 40%;
+}
+
+.header-logo img {}
+
+nav {
+    float: right;
+    width: 60%;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li .bfaf {
+    padding: 23px 20px;
+    color: #fff;
+    line-height: 35px;
+    transition: .5s;
+    position: relative;
+}
+
+nav ul li .bfaf:hover {
+    color: #c1853a;
+}
+
+nav ul li .bfaf::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 47px;
+    width: 0;
+    border-bottom: 1px solid #c1853a;
+    transition: .5s;
+
+}
+
+nav ul li .bfaf:hover:before {
+    width: 50%;
+}
+
+nav ul li .bfaf::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    width: 0;
+    border-bottom: 1px solid #c1853a;
+    transition: .5s;
+
+}
+
+nav ul li .bfaf:hover::after {
+    width: 50%;
+}
+
+/* Dropdown manu */
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 221px;
+    background-color: #e3e3e3;
+    text-align: center;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    transform: scaleY(0);
+
+}
+
+nav ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+nav ul li ul li a {
+    color: #000;
+
+    display: block;
+    padding: 20px 0;
+    transition: .5s;
+}
+
+nav ul li ul li:hover a {
+    color: #c1853a;
+    background-color: #b4b4b4;
+}
+
+/* Banner caption */
+.banner {
+    text-align: center;
+    padding: 170px 0 200px 0;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 80px;
+    margin: 0 0 30px 0;
+}
+
+.banner h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.banner a {
+    color: #fff;
+    background-color: #c69453;
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 30px;
+}
+
+.banner a:hover {
+    background-color: #fff;
+    color: #c69453;
+}
+
+/* Service secrtion */
+.section2 {
+    background-color: #f8f8f8;
+}
+
+.service-section {
+    width: 1100px;
+    margin: auto;
+    padding: 145px 0;
+}
+
+.service-box {}
+
+.service-item {
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.service-logo {
+    padding: 35px 0;
+}
+
+.service-logo img {
+    transition: .8s;
+}
+
+.service-item:hover {
+    background-color: #c4c2c0;
+}
+
+.item1:hover .service-logo img {
+    transform: rotateY(360deg);
+}
+
+.item2:hover .service-logo img {
+    transform: rotateY(360deg);
+}
+
+.item3:hover .service-logo img {
+    transform: rotateY(360deg);
+}
+
+.item4:hover .service-logo img {
+    transform: rotateY(360deg);
+}
+
+.item4 {
+    margin-right: 0;
+}
+
+.service-contant {}
+
+.service-contant h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.service-contant p {
+    opacity: .6;
+}
+
+.service-btn {
+    padding: 45px 0;
+}
+
+.service-btn a {
+    display: inline-block;
+    background-color: #c69453;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.service-btn a:hover {
+    background-color: #000;
+    color: #fff;
+    transform: translate(0px, 10px);
+}
+
+/* About Section */
+.about-section {
+    padding: 180px 0 0 0;
+}
+
+.about-section-left {
+    float: left;
+    width: 48%;
+}
+
+.about-section-right {
+    float: right;
+    width: 48%;
+    margin-left: 4%;
+}
+
+.about-section-right h1 {
+    margin: 0;
+}
+
+.about-section-right h1 b {
+    color: #c69453;
+    font-weight: bold;
+}
+
+.about-section-right p {
+    color: #767676;
+    padding: 40px 0 0 0;
+}
+
+.about-section-right details {
+    margin: 40px 0;
+    cursor: pointer;
+}
+
+.about-section-right a {
+    display: inline-block;
+    background-color: #000;
+    color: #ffff; 
+    padding: 10px 20px;
+    transition: .5s;
+}
+
+.about-section-right a:hover {
+    background-color: #c69453;
+
+}
+
+/* Contact section */
+.section3 {
+    background-image: url(https://i.postimg.cc/vmC38Cgx/ia-200000022.jpg);
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    padding: 31px 0;
+}
+
+.contact-section {
+    width: 530px;
+    margin-left: 190px;
+    margin-top: 35px;
+}
+
+.contact-left {}
+ 
+.contact-left h1 {}
+
+.contact-left p {margin-bottom: 30px;}
+
+.contact-form {}
+
+.contact-form form {}
+
+.contact-form form input {
+    width: 94%;
+    margin-bottom: 21px;
+    outline: none;
+    border: none; 
+    background-color: #fff;
+    height: 50px; 
+    padding: 0 10px;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,.5);
+    transition: .5s;
+}
+.contact-form form input:focus {
+    border: 2px solid #000;
+    border-radius: 5px;
+
+}
+.contact-form form textarea:focus {
+    border: 2px solid #000;
+    border-radius: 5px;
+
+}
+.contact-form form .submit-btn:focus {
+    border: none;
+    border-radius: 0;
+
+}
+.contact-form form textarea {
+    width: 94%;
+    margin-bottom: 21px;
+    outline: none;
+    border: none; 
+    background-color: #fff;
+    height: 154px;
+    padding: 9px 11px;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,.5);
+    transition: .5s;
+}
+.contact-form form  .submit-btn{
+    cursor: pointer;
+    background-color: #c69453;
+    width: 20%;
+    padding: 5px 10px;
+    box-sizing: content-box;
+    color: #fff;
+}
+/* Footer Section */
+footer{background-color: #6d6d6d;padding: 50px 70px;}
+.footer-left{float: left;width: 50%;} 
+.footer-left p{}
+.footer-right{float: right;width: 50%;text-align: right;}
+.footer-right ul{padding-right: 100px;}
+.footer-right ul li{display: inline-block;}
+.footer-right ul li a{color: #dbdad7;display: inline-block;padding: 0 16px;}
+.footer-right ul li a a{}
