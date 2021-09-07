@@ -60,37 +60,25 @@ nav ul li {
 }
 
 nav ul li .bfaf {
-    padding: 23px 20px;
+    padding: 25px 20px;
     color: #fff;
-    line-height: 35px;
+    line-height: 65px;
     transition: .5s;
-    position: relative;
+    position: relative; 
 }
-
+ 
 nav ul li .bfaf:hover {
     color: #c1853a;
 }
 
-nav ul li .bfaf::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 47px;
-    width: 0;
-    border-bottom: 1px solid #c1853a;
-    transition: .5s;
-
-}
-
-nav ul li .bfaf:hover:before {
-    width: 50%;
-}
 
 nav ul li .bfaf::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 0;
     border-bottom: 1px solid #c1853a;
     transition: .5s;
@@ -98,7 +86,7 @@ nav ul li .bfaf::after {
 }
 
 nav ul li .bfaf:hover::after {
-    width: 50%;
+    width: 100%;
 }
 
 /* Dropdown manu */
